@@ -1,0 +1,5 @@
+/.vscode
+/ext/*
+/build/*
+/electron/build/*
+/electron/node_modules/*
