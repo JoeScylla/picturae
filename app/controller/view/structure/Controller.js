@@ -1,7 +1,7 @@
 /**
  * --
  */
-Ext.define("Picturae.view.tree.Controller", {
+Ext.define("Picturae.controller.view.structure.Controller", {
     extend: "Ext.app.ViewController",
     alias: "controller.60ae5057bee54f0dabac5c94e2d2a408",
     /**
@@ -17,6 +17,7 @@ Ext.define("Picturae.view.tree.Controller", {
     onItemClick: function (tree, model, item, index, event, options) {
         console.log("ON_ITEM_CLICK");
 
+        var sqlite = require("sqlite3");
        
         var db = new sqlite3.Database(":memory:");
         db.serialize(function() {
